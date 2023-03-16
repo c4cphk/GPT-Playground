@@ -3,7 +3,7 @@ import openai
 from datetime import datetime
 from streamlit.components.v1 import html
 
-st.set_page_config(page_title="Chat with GPT-3")
+st.set_page_config(page_title="Chat with GPT")
 
 html_temp = """
                 <div style="background-color:{};padding:1px">
@@ -13,13 +13,13 @@ html_temp = """
 with st.sidebar:
     st.markdown("""
     ## About 
-    GPT-3 Response Generator is an easy-to-use tool that quickly generates meaningful responses to any given topic. 
+    GPT Response Generator is an easy-to-use tool that quickly generates meaningful responses to any given topic. 
     """)
     st.markdown(html_temp.format("rgba(55, 53, 47, 0.16)"),unsafe_allow_html=True)
     
     st.markdown("""
     ## How does it work?
-    Simply enter the topic of interest into the text field and the GPT-3 algorithm will use its vast knowledge of language to generate relevant responses.
+    Simply enter the topic of interest into the text field and the GPT algorithm will use its vast knowledge of language to generate relevant responses.
     """)
     st.markdown(html_temp.format("rgba(55, 53, 47, 0.16)"),unsafe_allow_html=True)
     
@@ -43,7 +43,7 @@ input_text = None
 apikey = None
 
 st.markdown("""
-# OpenAI GPT-3 Playground
+# OpenAI GPT Playground
 """)
 
 apikey = st.text_input("Your API Key", disabled=False, type="password", placeholder="API Key?")
