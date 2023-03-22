@@ -3,7 +3,7 @@ import openai
 from datetime import datetime
 from streamlit.components.v1 import html
 
-st.set_page_config(page_title="Chat with GPT")
+st.set_page_config(page_title="GPT Response Generator")
 
 html_temp = """
                 <div style="background-color:{};padding:1px">
@@ -43,7 +43,7 @@ input_text = None
 apikey = None
 
 st.markdown("""
-# OpenAI GPT Playground
+# GPT Response Generator
 """)
 
 apikey = st.text_input("Your API Key", disabled=False, type="password", placeholder="API Key?")
